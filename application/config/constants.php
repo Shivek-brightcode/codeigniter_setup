@@ -88,7 +88,7 @@ if($_SERVER['HTTP_HOST']=='localhost'){
 	defined('DB_HOST')      ? null : define('DB_HOST', 'localhost');
 	defined('DB_USER')      ? null : define('DB_USER', 'root');
 	defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', '');
-	defined('DB_NAME')      ? null : define('DB_NAME', 'your_db_name');  //Insert Here
+	defined('DB_NAME')      ? null : define('DB_NAME', 'db_yourdatabase');  //Insert Here
 }
 elseif($_SERVER['HTTP_HOST']=='softwarenew.in'){
 	defined('DB_HOST')      ? null : define('DB_HOST', '');

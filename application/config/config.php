@@ -24,7 +24,7 @@ date_default_timezone_set('Asia/Kolkata');
 |
 */
 if($_SERVER['HTTP_HOST']=='localhost'){
-	$config['base_url'] = "http://$_SERVER[HTTP_HOST]/project_name";
+	$config['base_url'] = "http://$_SERVER[HTTP_HOST]/yourprojectname";
 }
 elseif($_SERVER['HTTP_HOST']=='softwarenew.in'){
 	//$config['base_url'] = "http://$_SERVER[HTTP_HOST]/broadway/index.php";

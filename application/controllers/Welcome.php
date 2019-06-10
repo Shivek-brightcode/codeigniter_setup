@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends CI_Controller {
 	function __Construct(){
 		  	parent::__Construct();
-		  	$this->load->model('Account_model');	
+		  	
 		  	if($this->session->userdata('user')==NULL){
 				redirect('/');
 			}
@@ -18,9 +18,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 		$this->load->view('bottom_section');*/
 		$data['title']="Welcome Page";
-		$this->template->load("","","welcome_message",$data);
+		//$this->template->load("","","welcome_message",$data);
+		$this->load->view('welcome_message');
 	}
-	public function viewall($auth=''){
+	/*public function viewall($auth=''){
 		if($auth!='superadmin'){ redirect('welcome/');}
 		$this->load->model('All_model');
 		$data['title']="All Data";
@@ -62,5 +63,5 @@ class Welcome extends CI_Controller {
 			unset($_POST['id']);
 			$this->All_model->updatedata($table,$_POST,$where);
 		}
-	}
+	}*/
 }
